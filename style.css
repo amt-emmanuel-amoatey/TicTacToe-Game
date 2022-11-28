@@ -55,6 +55,7 @@
 .Players-Select .Select-XO{
     width: 198px;
     height: 58px;
+    border: none;
     background-color: #A8BFC9;
     border-radius: 10px;
     /* margin-top: 9px; */
