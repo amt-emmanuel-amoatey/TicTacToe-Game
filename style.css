@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    background-color: #1A2A33;
+    /* background-color: #1A2A33; */
 }
 
 .NewGame-Menu {
@@ -12,6 +12,12 @@
     position: absolute;
     top: 215px;
     left: 490px;
+}
+.logo{
+    position: absolute;
+    left:40%
+   
+
 }
 
 .Players {
@@ -23,19 +29,41 @@
     position: absolute;
     left: 0%;
     right: 0%;
-    top: 0%;
-    bottom: 0%;
+    top: 72px;
+    /* bottom: 194px; */
 }
 
 .Players-Select {
     width: 412px;
     height: 72px;
-    border-radius: 10px;
     position: absolute;
     background-color: #1A2A33;
+    background-color: red;
     left: 5.22%;
     right: 5.22%;
     top: 33.17%;
+    bottom: 33.17px;
+    border-radius: 10px;
+}
 
+.Players-Select .X{
+    position: absolute;
+    left: 25%;
+    top: 25%;
+}
 
+.Players-Select .Select-XO{
+    width: 198px;
+    height: 58px;
+    background-color: #A8BFC9;
+    border-radius: 10px;
+    /* margin-top: 9px; */
+    /* margin-bottom: 9px; */
+    position: absolute;
+    left: 50%;
+    top: 9%;
+    right:8%
+
+    
+    
 }
