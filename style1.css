@@ -1,0 +1,15 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+#Cell-Board{
+    width: 460px;
+    height: 461px;
+    background-color: #1A2A33;
+    position: absolute;
+    left: 490px;
+    top: 139px;
+}
