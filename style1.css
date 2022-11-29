@@ -1,8 +1,7 @@
 *{
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
-    
+    box-sizing: border-box;  
 }
 
 #Cell-Board{
@@ -12,4 +11,37 @@
     position: absolute;
     left: 490px;
     top: 139px;
+}
+
+.Head-Display{
+    background-color: #1A2A33;
+    height: 52px;
+}
+.players-xo{
+    background-color: #1A2A33;
+    border: none;
+}
+
+.player-turn{
+    width: 140px;
+    height: 52px;
+    box-shadow: inset 0px -4px 0px #10212A;
+    background-color: #1F3641;
+    border: none;
+    position: absolute;
+    right: 40%;
+    border-radius: 10px;
+}
+
+
+
+.Restart{
+    position: absolute;
+    background-color: #A8BFC9;
+    box-shadow: inset 0px -4px 0px #6BB997;
+    width: 52px;
+    height: 52px;
+    border-radius: 10px;
+    border: none;
+    right: 0px;
 }
