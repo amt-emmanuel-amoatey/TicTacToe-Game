@@ -1,10 +1,10 @@
-*{
+* {
     padding: 0;
     margin: 0;
-    box-sizing: border-box;  
+    box-sizing: border-box;
 }
 
-#Cell-Board{
+#Cell-Board {
     width: 460px;
     height: 461px;
     background-color: #1A2A33;
@@ -13,29 +13,30 @@
     top: 139px;
 }
 
-.Head-Display{
+.Head-Display {
     background-color: #1A2A33;
     height: 52px;
 }
-.players-xo{
+
+.players-xo {
     background-color: #1A2A33;
     border: none;
+    padding: 1%;
+
 }
 
-.player-turn{
+.player-turn {
     width: 140px;
     height: 52px;
     box-shadow: inset 0px -4px 0px #10212A;
     background-color: #1F3641;
     border: none;
     position: absolute;
-    right: 40%;
+    right: 35%;
     border-radius: 10px;
 }
 
-
-
-.Restart{
+.Restart {
     position: absolute;
     background-color: #A8BFC9;
     box-shadow: inset 0px -4px 0px #6BB997;
