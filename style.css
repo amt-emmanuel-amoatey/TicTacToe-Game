@@ -38,7 +38,6 @@
     height: 72px;
     position: absolute;
     background-color: #1A2A33;
-    background-color: red;
     left: 5.22%;
     right: 5.22%;
     top: 33.17%;
@@ -86,4 +85,28 @@
     font-size: 14px;
     font-weight: 500;
     letter-spacing: 0.875px;
+}
+
+.NewGame-VS-CPU{
+    width: 460px;
+    height: 67px;
+    background-color: #F2B137;
+    box-shadow: inset 0px -8px 0px #CC8B13;
+    border-radius: 15px;
+    position: absolute;
+    top: 317px;
+    /* top: 325px; */
+    /* margin-top: 285px; */
+    /* border: none; */
+    /* margin-bottom:87px */
+}
+.NewGame-VS-PLAYER{
+    width: 460px;
+        height: 67px;
+        background-color: #31C3BD;
+        box-shadow: inset 0px -8px 0px #118CB7;
+        border-radius: 15px;
+        position: absolute;
+        top: 404px;
+
 }
