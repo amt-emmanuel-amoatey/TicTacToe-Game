@@ -4,27 +4,36 @@
     box-sizing: border-box;
 }
 
+/* Board */
 #Cell-Board {
-    width: 460px;
-    height: 461px;
+    width: 461px;
+    height: 532px;
     background-color: #1A2A33;
     position: absolute;
     left: 490px;
     top: 139px;
 }
 
+/* Container Containing Cells */
+.Cell-Container {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+}
+
+/* Board Header */
 .Head-Display {
     background-color: #1A2A33;
     height: 52px;
 }
 
+/* Game Logo - XO */
 .players-xo {
     background-color: #1A2A33;
     border: none;
-    padding: 1%;
-
+    padding: 0.5%;
 }
 
+/* Player Turn Display (X TURN) */
 .player-turn {
     width: 140px;
     height: 52px;
@@ -36,6 +45,7 @@
     border-radius: 10px;
 }
 
+/* Restart Button */
 .Restart {
     position: absolute;
     background-color: #A8BFC9;
@@ -45,4 +55,13 @@
     border-radius: 10px;
     border: none;
     right: 0px;
+}
+
+/* Individual Cell Index */
+.cell-index {
+    width: 140px;
+    height: 140px;
+    background-color: #1F3641;
+    box-shadow: inset 0px -8px 0px #10212A;
+    border-radius: 15px;
 }
