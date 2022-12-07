@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    /* background-color: #1A2A33; */
 }
 
 /* Board */
@@ -35,7 +36,7 @@
 .players-xo {
     background-color: #1A2A33;
     border: none;
-    /* padding: 0.5%; */
+    padding: 0.5%;
 }
 
 /* Player Turn Display (X TURN) */
