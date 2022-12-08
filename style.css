@@ -62,6 +62,10 @@
     right: 8%;
 }
 
+.Select-XO img{
+    background-color: #A8BFC9;
+}
+
 .PICK-PLAYER {
     text-transform: uppercase;
     font-weight: 700;
