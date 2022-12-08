@@ -56,12 +56,10 @@
     letter-spacing: 2.5px;
     margin-left: 24px;
     color: #F2B137;
-
 }
 
 /* Quit & Next Button Div */
 .Option-Button {
-    /* position: absolute; */
     width: 238px;
     height: 52px;
     left: 126px;
