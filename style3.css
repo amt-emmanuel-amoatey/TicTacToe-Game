@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+/* Banner display id */
+#Player-Won {
+    width: 1440px;
+    height: 266px;
+    background-color: #1F3641;
+    margin-left: 0;
+    margin-top: 330px;
+}
