@@ -3,7 +3,7 @@
     box-sizing: border-box;
     padding: 0;
 }
-
+/* Banner display id */
 #Player-Loss {
     width: 1440px;
     height: 266px;
@@ -12,6 +12,7 @@
     margin-top: 330px;
 }
 
+/* section containing content within banner */
 .O-Takes-Round {
     width: 491px;
     height: 176px;
@@ -45,7 +46,7 @@
 
 
 }
-
+/* You lost display text */
 .You-Lost {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 700;
@@ -56,11 +57,13 @@
     text-align: center;
 }
 
+/* O image with banner */
 .O-Takes-Round img {
     width: 64px;
     height: 64px;
 }
 
+/* Takes the round text */
 .Takes-Round {
     width: 400px;
     height: 50px;
@@ -72,7 +75,7 @@
     margin-left: 24px;
 }
 
-
+/* Quit & Next Button Div */
 .Option-Button {
     position: absolute;
     width: 238px;
@@ -81,9 +84,19 @@
     top: 124px;
 }
 
+/* Quit Button */
 .Quit {
     width: 76px;
     height: 52px;
-    position:absolute;
-
+    background-color: #A8BFC9;
+    box-shadow: inset 0px -4px 0px #6B8997;
+    border-radius: 10px;
+    border: none;
+    text-transform: uppercase;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #1A2A33;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 1px;
 }
+
