@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    /* background-color: #1A2A33; */
+    background-color: #1A2A33;
 }
 
 /* Board */
@@ -51,6 +51,12 @@
     border-radius: 10px;
 }
 
+.player-turn img{
+    background-color: #1F3641;
+}
+
+
+
 /* Restart Button */
 .Restart {
     position: absolute;
@@ -61,6 +67,12 @@
     border-radius: 10px;
     border: none;
     right: 0px;
+    /* padding: 10px; */
+}
+
+/* Restart Button img */
+.Restart img {
+    background-color: #A8BFC9;
 }
 
 /* Individual Cell Index */
