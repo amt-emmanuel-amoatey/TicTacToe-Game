@@ -58,13 +58,6 @@
     color: #F2B137;
 }
 
-/* Quit & Next Button Div */
-.Option-Button {
-    width: 238px;
-    height: 52px;
-    left: 126px;
-}
-
 /* Quit Button */
 .Quit {
     width: 76px;
