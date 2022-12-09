@@ -43,12 +43,11 @@
     border-radius: 10px;
 }
 
-.Players-Select .X {
-    position: absolute;
-    left: 25%;
-    top: 25%;
 
-}
+
+
+
+
 
 .Players-Select .Select-XO {
     width: 198px;
@@ -62,10 +61,23 @@
     right: 8%;
 }
 
+.X-Button{
+    position: absolute;
+        right: 50%;
+        top: 9%;
+        background: rgba(168, 191, 201, 0.05);
+        border-radius: 10px;
+        width: 198px;
+        height: 58px;
+        border: none;
+}
+
+/* "O" Button Img */
 .Select-XO img{
     background-color: #A8BFC9;
 }
 
+/* Pick Player 1's Mark */
 .PICK-PLAYER {
     text-transform: uppercase;
     font-weight: 700;
@@ -79,6 +91,7 @@
 
 }
 
+/* Remember  X Goes First*/
 .Remenber-Text {
     text-align: center;
     margin-top: 113px;
@@ -89,6 +102,9 @@
     font-weight: 500;
     letter-spacing: 0.875px;
     background-color: #1F3641;
+    line-height: 18px;
+    letter-spacing: 0.875px;
+    text-transform: uppercase;
 }
 
 .NewGame-VS-CPU {
