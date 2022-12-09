@@ -5,7 +5,7 @@
 }
 
 /* Banner display id */
-#Player-Loss {
+#Player2-Wins {
     width: 1440px;
     height: 266px;
     background-color: #1F3641;
@@ -14,7 +14,7 @@
 }
 
 /* section containing content within banner */
-.O-Takes-Round {
+.X-Takes-Round {
     width: 491px;
     height: 176px;
     position: absolute;
@@ -57,7 +57,7 @@
     text-transform: uppercase;
     letter-spacing: 2.5px;
     margin-left: 24px;
-    color: #F2B137;
+    color: #31C3BD;
 }
 
 /* Quit Button */
