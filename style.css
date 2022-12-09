@@ -5,6 +5,7 @@
     background-color: #1A2A33
 }
 
+/* New Game Container */
 .NewGame-Menu {
     background-color: #1A2A33;
     width: 460px;
@@ -14,11 +15,14 @@
     top: 139px;
 }
 
+/* "XO" Logo */
 .logo {
     position: absolute;
     left: 40%
 }
 
+
+/* "X&O" Players Container */
 .Players {
     background-color: #1F3641;
     width: 460px;
@@ -31,11 +35,13 @@
     top: 72px;
 }
 
+/* Buttons Container */
 .Players-Select {
     width: 412px;
     height: 72px;
     position: absolute;
     background-color: #1A2A33;
+    /* background-color: red; */
     left: 5.22%;
     right: 5.22%;
     top: 33.17%;
@@ -43,13 +49,8 @@
     border-radius: 10px;
 }
 
-
-
-
-
-
-
-.Players-Select .Select-XO {
+/* "O" Button */
+.Players-Select .O-Button {
     width: 198px;
     height: 58px;
     border: none;
@@ -61,20 +62,26 @@
     right: 8%;
 }
 
-.X-Button{
-    position: absolute;
-        right: 50%;
-        top: 9%;
-        background: rgba(168, 191, 201, 0.05);
-        border-radius: 10px;
-        width: 198px;
-        height: 58px;
-        border: none;
+/* "O" Button Img */
+.O-Button img {
+    background-color: #A8BFC9;
 }
 
-/* "O" Button Img */
-.Select-XO img{
-    background-color: #A8BFC9;
+/* "X" Button */
+.X-Button {
+    position: absolute;
+    right: 50%;
+    top: 9%;
+    background: rgba(168, 191, 201, 0.05);
+    border-radius: 10px;
+    width: 198px;
+    height: 58px;
+    border: none;
+}
+
+/* "X" Button Image */
+.X-Button img {
+    background: rgba(168, 191, 201, 0.05);  
 }
 
 /* Pick Player 1's Mark */
@@ -87,8 +94,7 @@
     margin-top: 24px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     letter-spacing: 1px;
-    background-color: #1F3641;;
-
+    background-color: #1F3641;
 }
 
 /* Remember  X Goes First*/
@@ -107,6 +113,7 @@
     text-transform: uppercase;
 }
 
+/* New Game Button */
 .NewGame-VS-CPU {
     width: 460px;
     height: 67px;
@@ -122,6 +129,7 @@
     text-transform: uppercase;
 }
 
+/* New Game Button */
 .NewGame-VS-PLAYER {
     width: 460px;
     height: 67px;
