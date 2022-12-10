@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    background-color: #1A2A33;
+    /* background-color: #1A2A33; */
 }
 
 /* Board */
@@ -13,6 +13,7 @@
     position: absolute;
     left: 490px;
     top: 139px;
+
 }
 
 /* Container Containing Cells */
@@ -22,7 +23,6 @@
     display: grid;
     grid-template-columns: repeat(3, auto);
     margin-top: 19px;
-
 }
 
 /* Board Header */
@@ -66,6 +66,7 @@
     border: none;
     right: 0px;
 }
+
 .Restart:hover {
     cursor: pointer;
 }
@@ -131,4 +132,91 @@
     font-size: 14px;
     font-weight: 500;
     color: #1A2A33;
+}
+
+@media only screen and (max-width:500px) {
+
+    /* Board */
+    #Cell-Board {
+        width: 328px;
+        height: 516px;
+        background-color: #1A2A33;
+        position: absolute;
+        left: 490px;
+        top: 139px;
+    }
+
+    /* Board Header */
+    .Head-Display {
+        background-color: #1A2A33;
+        height: 52px;
+        width: 328px;
+    }
+
+    /* Container Containing Cells */
+    .Cell-Container {
+        width: 328px;
+        height: 328px;
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        margin-top: 19px;
+    }
+
+    /* Individual Cell Index */
+    .cell-index {
+        width: 96px;
+        height: 96px;
+        background-color: #1F3641;
+        box-shadow: inset 0px -8px 0px #10212A;
+        border-radius: 15px;
+        margin-right: 20px;
+    }
+
+    /* Score Button Container */
+    .Score-Buttons {
+        background-color: #1A2A33;
+        width: 328px;
+        height: 64px;
+    }
+
+    /* Score Buttons Below Game Board */
+    .X-You {
+        width: 96px;
+        height: 64px;
+        border-radius: 15px;
+        background-color: #31C3BD;
+        margin-right: 15px;
+        border: none;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        color: #1A2A33;
+    }
+
+    .Ties {
+        width: 96px;
+        height: 64px;
+        margin-right: 15px;
+        border-radius: 15px;
+        border: none;
+        background-color: #A8BFC9;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        color: #1A2A33;
+    }
+
+    .O-CPU {
+        width: 96px;
+        height: 64px;
+        border-radius: 15px;
+        border: none;
+        background-color: #F2B137;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        color: #1A2A33;
+    }
+
+
 }

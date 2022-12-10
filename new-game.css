@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    background-color: #1A2A33
+    background-color: #1A2A33;
 }
 
 /* New Game Container */
@@ -261,5 +261,5 @@
         color: #1A2A33;
         text-transform: uppercase;
     }
-    
+
 }
