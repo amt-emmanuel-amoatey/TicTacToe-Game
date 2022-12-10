@@ -55,8 +55,6 @@
     background-color: #1F3641;
 }
 
-
-
 /* Restart Button */
 .Restart {
     position: absolute;
@@ -68,7 +66,6 @@
     border: none;
     right: 0px;
 }
-
 .Restart:hover {
     cursor: pointer;
 }

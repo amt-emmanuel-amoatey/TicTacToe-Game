@@ -31,15 +31,12 @@
     text-transform: uppercase;
 }
 
-
-
 .Restart-Buttons {
     width: 306px;
     height: 52px;
     position: absolute;
     left: 22px;
     top: 81px;
-
 }
 
 .No-Restart {
@@ -59,8 +56,6 @@
     line-height: 20px;
     letter-spacing: 1px;
     color: #1A2A33;
-
-
 }
 
 .Yes-Restart {
@@ -80,6 +75,4 @@
     text-align: center;
     text-transform: uppercase;
     color: #1A2A33;
-
-
 }

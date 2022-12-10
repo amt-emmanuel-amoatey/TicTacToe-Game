@@ -21,7 +21,6 @@
     left: 40%
 }
 
-
 /* "X&O" Players Container */
 .Players {
     background-color: #1F3641;
@@ -66,7 +65,7 @@
     background-color: #A8BFC9;
 }
 
-/* "X" Button */
+/* Player "X" Button" */
 .X-Button {
     position: absolute;
     right: 50%;
@@ -76,17 +75,25 @@
     height: 58px;
     border: none;
 }
-.X-Button:hover{
-    background: rgba(168, 191, 201, 0.05);
+
+.X-Button:hover {
     cursor: pointer;
+    background: rgba(168, 191, 201, 0.05);
+    position: absolute;
+    right: 50%;
+    top: 9%;
+    border-radius: 10px;
+    width: 198px;
+    height: 58px;
+    border: none;
 }
 
 /* "X" Button Image */
 .X-Button img {
-    background: rgba(168, 191, 201, 0.05);
+    background-color: #1A2A33;
 }
 
-/* Pick Player 1's Mark */
+/* Pick Player 1's Mark  Text*/
 .PICK-PLAYER {
     text-transform: uppercase;
     font-weight: 700;
@@ -130,7 +137,8 @@
     color: #1A2A33;
     text-transform: uppercase;
 }
-.NewGame-VS-CPU:hover{
+
+.NewGame-VS-CPU:hover {
     cursor: pointer;
 }
 
@@ -149,6 +157,109 @@
     color: #1A2A33;
     text-transform: uppercase;
 }
-.NewGame-VS-PLAYER:hover{
+
+.NewGame-VS-PLAYER:hover {
     cursor: pointer;
+}
+
+
+/*Media Query For Mobile */
+@media only screen and (max-width:500px) {
+    
+
+    /* New Game Container */
+    .NewGame-Menu {
+        background-color: #1A2A33;
+        width: 327px;
+        height: 429px;
+        position: absolute;
+        left: 490px;
+        top: 139px;
+        /* width: fit-content; */
+        /* margin-left: -460px; */
+    }
+
+    /* "X&O" Players Container */
+    .Players {
+        background-color: #1F3641;
+        width: 327px;
+        height: 205px;
+        box-shadow: inset 0px -8px 0px #10212A;
+        border-radius: 15px;
+        position: absolute;
+        left: 0%;
+        right: 0%;
+        top: 72px;
+    }
+
+    /* Buttons Container */
+    .Players-Select {
+        width: 279px;
+        height: 72px;
+        position: absolute;
+        background-color: #1A2A33;
+        left: 5.22%;
+        right: 5.22%;
+        top: 33.17%;
+        bottom: 33.17px;
+        border-radius: 10px;
+    }
+
+    /* "O" Button */
+    .Players-Select .O-Button {
+        width: 131.99px;
+        height: 58px;
+        border: none;
+        background-color: #A8BFC9;
+        border-radius: 10px;
+        position: absolute;
+        left: 50%;
+        top: 9%;
+        right: 8%;
+    }
+
+    /* Player "X" Button" */
+    .X-Button {
+        position: absolute;
+        right: 50%;
+        top: 9%;
+        border-radius: 10px;
+        width: 131.99px;
+        height: 58px;
+        border: none;
+    }
+
+    /* New Game Button */
+    .NewGame-VS-CPU {
+        width: 327px;
+        height: 56px;
+        background-color: #F2B137;
+        box-shadow: inset 0px -8px 0px #CC8B13;
+        border-radius: 15px;
+        position: absolute;
+        top: 70%;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: 700;
+        font-size: 20px;
+        color: #1A2A33;
+        text-transform: uppercase;
+    }
+
+    /* New Game Button */
+    .NewGame-VS-PLAYER {
+        width: 327px;
+        height: 56px;
+        background-color: #31C3BD;
+        box-shadow: inset 0px -8px 0px #118CB7;
+        border-radius: 15px;
+        position: absolute;
+        /* top: 404px; */
+        top: 86%;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: 700;
+        font-size: 20px;
+        color: #1A2A33;
+        text-transform: uppercase;
+    }
+    
 }
