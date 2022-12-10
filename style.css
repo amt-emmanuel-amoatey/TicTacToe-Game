@@ -41,7 +41,6 @@
     height: 72px;
     position: absolute;
     background-color: #1A2A33;
-    /* background-color: red; */
     left: 5.22%;
     right: 5.22%;
     top: 33.17%;
@@ -72,16 +71,19 @@
     position: absolute;
     right: 50%;
     top: 9%;
-    background: rgba(168, 191, 201, 0.05);
     border-radius: 10px;
     width: 198px;
     height: 58px;
     border: none;
 }
+.X-Button:hover{
+    background: rgba(168, 191, 201, 0.05);
+    cursor: pointer;
+}
 
 /* "X" Button Image */
 .X-Button img {
-    background: rgba(168, 191, 201, 0.05);  
+    background: rgba(168, 191, 201, 0.05);
 }
 
 /* Pick Player 1's Mark */
