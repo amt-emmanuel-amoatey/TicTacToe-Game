@@ -149,3 +149,6 @@
     color: #1A2A33;
     text-transform: uppercase;
 }
+.NewGame-VS-PLAYER:hover{
+    cursor: pointer;
+}
