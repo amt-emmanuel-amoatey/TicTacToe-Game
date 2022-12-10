@@ -76,6 +76,9 @@
     left: 25.66%;
     top: 70.45%;
 }
+.Quit:hover{
+    cursor: pointer;
+}
 
 
 /* Next Round Button */
@@ -95,4 +98,7 @@
     letter-spacing: 1px;
     text-transform: uppercase;
     color: #1A2A33;
+}
+.Next-Round:hover{
+    cursor: pointer;
 }
