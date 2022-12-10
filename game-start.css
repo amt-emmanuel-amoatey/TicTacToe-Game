@@ -51,7 +51,7 @@
     border-radius: 10px;
 }
 
-.player-turn img{
+.player-turn img {
     background-color: #1F3641;
 }
 
@@ -67,7 +67,10 @@
     border-radius: 10px;
     border: none;
     right: 0px;
-    /* padding: 10px; */
+}
+
+.Restart:hover {
+    cursor: pointer;
 }
 
 /* Restart Button img */
@@ -85,10 +88,13 @@
     margin-right: 20px;
 }
 
+.cell-index:hover {
+    cursor: pointer;
+}
+
 /* Score Button Containing */
 .Score-Buttons {
     background-color: #1A2A33;
-    /* margin-top: 19px; */
 }
 
 /* Score Buttons Below Game Board */
