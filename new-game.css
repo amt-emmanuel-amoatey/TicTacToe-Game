@@ -74,6 +74,7 @@
     width: 198px;
     height: 58px;
     border: none;
+    
 }
 
 .X-Button:hover {
@@ -91,6 +92,7 @@
 /* "X" Button Image */
 .X-Button img {
     background-color: #1A2A33;
+    
 }
 
 /* Pick Player 1's Mark  Text*/
@@ -261,5 +263,17 @@
         color: #1A2A33;
         text-transform: uppercase;
     }
+
+        .X-Button:hover{
+            display: none;
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            background-color: #1A2A33;
+        }
+
 
 }

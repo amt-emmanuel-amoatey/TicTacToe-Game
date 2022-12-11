@@ -3,11 +3,12 @@
     box-sizing: border-box;
     padding: 0;
     /* background-color: #1F3641; */
+    /* overflow:hidden; */
 }
 
 /* Banner display id */
 #Player-Loss {
-    width: auto;
+    width: 1440px;
     height: 266px;
     background-color: #1F3641;
     margin-left: 0;
@@ -21,6 +22,8 @@
     position: absolute;
     left: 475px;
     top: 375px;
+    /* background-color: #1F3641; */
+    background-color: green;
 }
 
 /* Div containing "O" image and Takes the Round text */
@@ -104,11 +107,15 @@
 
     /* Banner display id */
     #Player-Loss {
-        width: auto;
-        height: 266px;
-        background-color: #1F3641;
-        margin-left: 0;
-        margin-top: 330px;
+        width: 450px;
+        /* height: 266px; */
+        margin-left: 0px;
+        /* margin-top: 330px; */
+
+        height: 228px;
+        /* position: absolute; */
+        margin-top: 220px;
+
     }
 
 
@@ -117,18 +124,18 @@
         width: 280px;
         height: 140px;
         position: absolute;
-        /* left: 475px; */
-        top: 375px;
-        background-color: green;
+        top: 260px;
+        left: 48px;
+
     }
 
     /* Div containing "O" image and "Takes the Round text" */
     .Image-Text {
-        /* display: flex; */
-        /* position: absolute; */
-        /* top: 20.45%; */
-        /* width: 280px;
-        height: 30px; */
+        display: flex;
+        position: absolute;
+        top: 20.45%;
+        width: 280px;
+        height: 30px;
         position: absolute;
         left: 0%;
         right: 0%;
@@ -177,20 +184,32 @@
         font-size: 16px;
         letter-spacing: 1px;
         position: absolute;
-        /* top: 70.45%; */
-        right: 0%;
-        left: 0%;
-        bottom: 0%; 
+        right: 65.36%;
+        left: 7.5%;
+        bottom: 0%;
+        top: 62.86%;
     }
 
-    /* Div contaning Button "Quit" and "Next Round" */
-    .Option-Button {
-        position: absolute;
-        width: 238px;
+    /* Next Round Button */
+    .Next-Round {
+        width: 146px;
         height: 52px;
-        left: 21px;
-        top: 50px;
+        position: absolute;
+        left: 44.4%;
+        top: 70.45%;
+        background-color: #f2b137;
+        box-shadow: inset 0px -4px 0px #CC8B13;
+        border-radius: 10px;
+        border: none;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: 700;
+        font-size: 16px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: #1A2A33;
     }
+
+
 
 
 }
