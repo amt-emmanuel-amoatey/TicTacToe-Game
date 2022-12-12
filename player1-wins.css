@@ -2,7 +2,7 @@
     margin: 0;
     box-sizing: border-box;
     padding: 0;
-    /* background-color: #1F3641; */
+    background-color: #1F3641;
     /* overflow:hidden; */
 }
 
@@ -151,7 +151,6 @@
         position: absolute;
         left: 0%;
         right: 89.29%;
-        top: 10%;
     }
 
     /* Takes the round text */
