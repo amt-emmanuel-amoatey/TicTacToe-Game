@@ -2,8 +2,7 @@
     margin: 0;
     box-sizing: border-box;
     padding: 0;
-    background-color: #1F3641;
-    /* overflow:hidden; */
+    overflow:hidden;
 }
 
 /* Banner display id */
@@ -22,8 +21,6 @@
     position: absolute;
     left: 475px;
     top: 375px;
-    /* background-color: #1F3641; */
-    background-color: green;
 }
 
 /* Div containing "O" image and Takes the Round text */
@@ -108,14 +105,9 @@
     /* Banner display id */
     #Player-Loss {
         width: 450px;
-        /* height: 266px; */
-        margin-left: 0px;
-        /* margin-top: 330px; */
-
         height: 228px;
-        /* position: absolute; */
+        margin-left: 0px;
         margin-top: 220px;
-
     }
 
 
@@ -125,8 +117,8 @@
         height: 140px;
         position: absolute;
         top: 260px;
-        left: 48px;
-
+        left: 73px;
+        right: 73px;
     }
 
     /* Div containing "O" image and "Takes the Round text" */
