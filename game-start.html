@@ -15,7 +15,7 @@
   </head>
   <body>
     <main>
-      <section class="Game-Start">
+      <section id= "Game-Start" class="Game-Start" >
         <div id="Cell-Board">
           <div class="Head-Display">
             <button class="players-xo">
@@ -24,20 +24,20 @@
             <button class="player-turn">
               <img src="assets/x turn.svg" alt="" />
             </button>
-            <button class="Restart">
+            <button class="Restart" onclick="restartGame()">
               <img src="assets/icon-restart.svg" alt="" />
             </button>
           </div>
           <div class="Cell-Container">
-            <div class="cell-index"></div>
-            <div class="cell-index"></div>
-            <div class="cell-index"></div>
-            <div class="cell-index"></div>
-            <div class="cell-index"></div>
-            <div class="cell-index"></div>
-            <div class="cell-index"></div>
-            <div class="cell-index"></div>
-            <div class="cell-index"></div>
+            <div onclick="hitBox('0')" id="0" class="cell-index cell0 hoverClassX" ></div>
+            <div onclick="hitBox('1')" id="1" class="cell-index cell1 hoverClassX"></div>
+            <div onclick="hitBox('2')" id="2" class="cell-index cell2 hoverClassX"></div>
+            <div onclick="hitBox('3')" id="3" class="cell-index cell3 hoverClassX"></div>
+            <div onclick="hitBox('4')" id="4" class="cell-index cell4 hoverClassX"></div>
+            <div onclick="hitBox('5')" id="5" class="cell-index cell5 hoverClassX"></div>
+            <div onclick="hitBox('6')" id="6" class="cell-index cell6 hoverClassX"></div>
+            <div onclick="hitBox('7')" id="7" class="cell-index cell7"></div>
+            <div onclick="hitBox('8')" id="8" class="cell-index cell8 hoverClassX"></div>
           </div>
           <div class="Score-Buttons">
             <button class="X-You">X (YOU)</button>
@@ -45,7 +45,9 @@
             <button class="O-CPU">O (CPU)</button>
           </div>
         </div>
+
       </section>
     </main>
+    <script type="module" src="./game-start.js"></script>
   </body>
 </html>

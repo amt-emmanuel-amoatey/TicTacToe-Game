@@ -74,7 +74,7 @@
     width: 198px;
     height: 58px;
     border: none;
-    
+
 }
 
 .X-Button:hover {
@@ -92,7 +92,7 @@
 /* "X" Button Image */
 .X-Button img {
     background-color: #1A2A33;
-    
+
 }
 
 /* Pick Player 1's Mark  Text*/
@@ -164,10 +164,86 @@
     cursor: pointer;
 }
 
+/* toggle */
+
+.players-container {
+    width: 412px;
+    height: 72px;
+    position: absolute;
+    background-color: #1A2A33;
+    left: 5.22%;
+    right: 5.22%;
+    top: 33.17%;
+    bottom: 33.17px;
+    border-radius: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+}
+
+
+
+
+
+input, .checkbox {
+    width: 198px;
+    height: 58px;
+    border: none;
+    border-radius: 10px;
+    left: 50%;
+    top: 9%;
+    right: 8%;
+    -webkit-appearance: none;
+    cursor: pointer;
+  
+}
+input:hover {
+    background-color: #1F3641;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+
+
+input:checked{
+    background-color: #A8BFC9;
+    margin-top:auto ;
+    margin-bottom: auto;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+ .x-mark{
+    margin-top:20px;
+    margin-bottom: auto;
+    position: absolute;
+    margin-left: 91px;
+    /* align-items: center; */
+}
+
+.O-mark{
+    margin-top:20px;
+    margin-bottom: auto;
+    position: absolute;
+    margin-left: 289px;
+    /* background-color: #A8BFC9; */
+
+}
+
+
+
+
+
+
+
+
 
 /*Media Query For Mobile */
 @media only screen and (max-width:500px) {
-    
+
 
     /* New Game Container */
     .NewGame-Menu {
@@ -264,16 +340,16 @@
         text-transform: uppercase;
     }
 
-        .X-Button:hover{
-            display: none;
-        }
+    .X-Button:hover {
+        display: none;
+    }
 
-        * {
-            padding: 0;
-            margin: 0;
-            box-sizing: border-box;
-            background-color: #1A2A33;
-        }
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        background-color: #1A2A33;
+    }
 
 
 }
