@@ -4,18 +4,24 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    background-color: #1A2A33;
 }
 
 body {
     font-family: "Outfit", sans-serif;    
     overflow-x: hidden;
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
 }
 
 
 
 /* Board */
-#Cell-Board {
+#cellBoard {
     width: 461px;
     height: 532px;
     background-color: #1A2A33;
@@ -35,7 +41,7 @@ body {
 }
 
 /* Board Header */
-.Head-Display {
+.headDisplay {
     background-color: #1A2A33;
     height: 52px;
     width: 457.24px;
@@ -65,7 +71,7 @@ body {
 }
 
 /* Restart Button */
-.Restart {
+.RestartBtn {
     position: absolute;
     background-color: #A8BFC9;
     box-shadow: inset 0px -4px 0px #6BB997;
@@ -76,12 +82,16 @@ body {
     right: 0px;
 }
 
-.Restart:hover {
+.RestartBtn:hover {
     cursor: pointer;
+    
+}
+.RestartBtn:active{
+    transform: translateY(2px);
 }
 
 /* Restart Button img */
-.Restart img {
+.RestartBtn img {
     background-color: #A8BFC9;
 }
 
@@ -93,10 +103,16 @@ body {
     box-shadow: inset 0px -8px 0px #10212A;
     border-radius: 15px;
     margin-right: 20px;
+    cursor: pointer;
 }
 
-.cell-index:hover {
-    cursor: pointer;
+.cell-index:active{
+    transform: translateY(2px);
+}
+
+.cell.x,
+.cell.O {
+    cursor: not-allowed;
 }
 
 /* Score Button Containing */
@@ -143,19 +159,134 @@ body {
     color: #1A2A33;
 }
 
-.hoverClassO:hover {
-    cursor: pointer;
-    background-image: url(./assets/icon-o-outline.svg);
-    background-position: center;
+.hoverClassX:hover {
+    /* cursor: pointer; */
+    background-image: url(./assets/icon-x-outline.svg);
     background-repeat: no-repeat;
+    background-position: center;
 }
+
+.hoverClassO:hover {
+    /* cursor: pointer; */
+    background-image: url(./assets/icon-o-outline.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+/* restart modal */
+.hidden {
+    display: none;
+}
+.modal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 2;
+    background: rgb(0, 0, 0, 0.5);
+}
+
+.overlay{
+    backdrop-filter: blut(10px);
+    z-index: 1;
+}
+
+/* Banner display id */
+.Restart {
+    width: 1440px;
+    height: 266px;
+    /* background-color: #1F3641; */
+    margin-left: 0;
+    margin-top: 330px;
+    
+}
+
+/* section containing content within banner */
+.Restart-Wrapper {
+    width: 351px;
+    height: 133px;
+    position: absolute;
+    left: 545px;
+    top: 397px;
+    
+}
+
+
+
+/* "Restart Text" */
+
+.Restart-Game-Text {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+    letter-spacing: 2.5px;
+    text-align: center;
+    color: #A8BFC9;
+    text-transform: uppercase;
+}
+
+
+.Restart-Buttons {
+    width: 306px;
+    height: 52px;
+    position: absolute;
+    left: 22px;
+    top: 81px;
+    transform: translateY(2px);
+}
+
+.No-Restart {
+    width: 139px;
+    height: 52px;
+    position: absolute;
+    left: 0%;
+    background-color: #A8BFC9;
+    border: none;
+    box-shadow: inset 0px -4px 0px #6b8997;
+    border-radius: 10px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 20px;
+    letter-spacing: 1px;
+    color: #1A2A33;
+    
+}
+
+.Yes-Restart {
+    width: 139px;
+    height: 52px;
+    position: absolute;
+    right: 0%;
+    background-color: #F2B137;
+    box-shadow: inset 0px -4px 0px #CC8B13;
+    border-radius: 10px;
+    border: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 1px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #1A2A33;
+}
+
+
+
+
+
+
 
 
 
 @media only screen and (max-width:500px) {
 
     /* Board */
-    #Cell-Board {
+    #cellBoard {
         width: 328px;
         height: 516px;
         background-color: #1A2A33;
@@ -178,6 +309,9 @@ body {
         display: grid;
         grid-template-columns: repeat(3, auto);
         margin-top: 19px;
+        cursor: not-allowed;
+
+        
     }
 
     /* Individual Cell Index */

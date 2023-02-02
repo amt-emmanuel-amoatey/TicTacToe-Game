@@ -15,37 +15,92 @@
   </head>
   <body>
     <main>
-      <section id= "Game-Start" class="Game-Start" >
-        <div id="Cell-Board">
-          <div class="Head-Display">
+      <section id="gameStart" class="Game-Start">
+        <div id="cellBoard">
+          <div class="headDisplay">
             <button class="players-xo">
               <img src="assets/logo.svg" alt="logo" class="players-xo" />
             </button>
             <button class="player-turn">
-              <img src="assets/x turn.svg" alt="" />
+              <img
+                id="turn"
+                class="Xturn"
+                src="./assets/x turn.svg"
+                alt="X icon"
+                data-value="X"
+              />
             </button>
-            <button class="Restart" onclick="restartGame()">
+            <!-- <a href="new-game.html" class="">  -->
+            <button class="RestartBtn btn btn-open" id="restartBtn">
               <img src="assets/icon-restart.svg" alt="" />
             </button>
+            <!-- </a>  -->
           </div>
-          <div class="Cell-Container">
-            <div onclick="hitBox('0')" id="0" class="cell-index cell0 hoverClassX" ></div>
-            <div onclick="hitBox('1')" id="1" class="cell-index cell1 hoverClassX"></div>
-            <div onclick="hitBox('2')" id="2" class="cell-index cell2 hoverClassX"></div>
-            <div onclick="hitBox('3')" id="3" class="cell-index cell3 hoverClassX"></div>
-            <div onclick="hitBox('4')" id="4" class="cell-index cell4 hoverClassX"></div>
-            <div onclick="hitBox('5')" id="5" class="cell-index cell5 hoverClassX"></div>
-            <div onclick="hitBox('6')" id="6" class="cell-index cell6 hoverClassX"></div>
-            <div onclick="hitBox('7')" id="7" class="cell-index cell7"></div>
-            <div onclick="hitBox('8')" id="8" class="cell-index cell8 hoverClassX"></div>
+          <div class="Cell-Container" id="cellContainer">
+            <div
+              onclick="hitCell('0')"
+              id="0"
+              class="cell-index cell0 hoverClassX"
+            ></div>
+            <div
+              onclick="hitCell('1')"
+              id="1"
+              class="cell-index cell1 hoverClassX"
+            ></div>
+            <div
+              onclick="hitCell('2')"
+              id="2"
+              class="cell-index cell2 hoverClassX"
+            ></div>
+            <div
+              onclick="hitCell('3')"
+              id="3"
+              class="cell-index cell3 hoverClassX"
+            ></div>
+            <div
+              onclick="hitCell('4')"
+              id="4"
+              class="cell-index cell4 hoverClassX"
+            ></div>
+            <div
+              onclick="hitCell('5')"
+              id="5"
+              class="cell-index cell5 hoverClassX"
+            ></div>
+            <div
+              onclick="hitCell('6')"
+              id="6"
+              class="cell-index cell6 hoverClassX"
+            ></div>
+            <div
+              onclick="hitCell('7')"
+              id="7"
+              class="cell-index cell7 hoverClassX"
+            ></div>
+            <div
+              onclick="hitCell('8')"
+              id="8"
+              class="cell-index cell8 hoverClassX"
+            ></div>
           </div>
-          <div class="Score-Buttons">
+          <div class="Score-Buttons" id="scoreBtn">
             <button class="X-You">X (YOU)</button>
             <button class="Ties">TIES</button>
             <button class="O-CPU">O (CPU)</button>
           </div>
         </div>
-
+      </section>
+      <!-- restart modal -->
+      <section id="restartModal" class="hidden modal">
+        <div class="Restart overlay hidden">
+          <div class="Restart-Wrapper">
+            <p class="Restart-Game-Text">Restart Game?</p>
+            <div class="Restart-Buttons">
+              <button class="No-Restart btn-close">no, cancel</button>
+              <button class="Yes-Restart">yes, restart</button>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
     <script type="module" src="./game-start.js"></script>

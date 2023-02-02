@@ -125,7 +125,7 @@
 }
 
 /* New Game Button */
-.NewGame-VS-CPU {
+.newGameVsCPU {
     width: 460px;
     height: 67px;
     background-color: #F2B137;
@@ -140,9 +140,15 @@
     text-transform: uppercase;
 }
 
-.NewGame-VS-CPU:hover {
+
+
+.newGameVsCPU:hover {
     cursor: pointer;
 }
+.newGameVsCPU:active{
+    transform: translateY(2px);
+}
+
 
 /* New Game Button */
 .NewGame-VS-PLAYER {
@@ -162,6 +168,9 @@
 
 .NewGame-VS-PLAYER:hover {
     cursor: pointer;
+}
+.NewGame-VS-PLAYER:active{
+    transform: translateY(2px);
 }
 
 /* toggle */
