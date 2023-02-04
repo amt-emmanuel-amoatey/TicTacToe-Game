@@ -29,7 +29,7 @@
 
           <!-- toggle -->
           <div class="players-container">
-            <input type="checkbox" class="player-X" />
+            <input type="checkbox" id = 'X-mark' class="player-X" />
             <svg
               class="x-mark"
               width="32"
@@ -45,7 +45,7 @@
                 fill="#A8BFC9"
               />
             </svg>
-            <span> </span> <input type="checkbox" class="player-O" />
+            <span> </span> <input type="checkbox"  id="O-mark" class="player-O" />
             <svg
               class="O-mark"
               width="32"
@@ -70,7 +70,7 @@
           <button
             class="newGameVsCPU"
             id="newGameVSCPU"
-            onclick="NewGameVSCPU()"
+            onclick="NewGameVSCPU()" data-value=""
           >
             New Game (vs CPU)
           </button>
